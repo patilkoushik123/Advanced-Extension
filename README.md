@@ -25,6 +25,21 @@ This project allows users to summarize web content, extract correct answers from
 
 ---
 
+## 🗺️ Comparison with Existing Tools
+
+| **Feature**               | **This Extension ✅**                | **Other Extensions ✅ / ❌**     |
+|---------------------------|-------------------------------------|---------------------------------|
+| Summarization             | ✅ Yes                               | ✅ Yes                          |
+| Correct Answer Detection  | ✅ Yes                               | ❌ No                           |
+| MCQ Generation            | ✅ Yes                               | ❌ No                           |
+| Ask Custom Questions      | ✅ Yes                               | ❌ No                           |
+| Save/Download Results     | ✅ Yes                               | ❌ No                           |
+| MCQ Answer Explanation    | ✅ Yes                               | ❌ No                           |
+| Multilingual Support      | ✅ Yes                               | ✅ Yes (basic only)             |
+| AI-Powered Backend        | ✅ Gemini AI + Spring Boot           | ❌ Only client-side JS          |
+
+---
+
 ## 🛠️ Technologies Used
 
 - **Java 17+** – Backend development (Spring Boot)
@@ -66,5 +81,4 @@ This project allows users to summarize web content, extract correct answers from
 🌍 Expand multilingual support to include translation  
 🎙️ Add voice input and text-to-speech output  
 📚 Sync saved results to Google Drive or Firebase  
-🧠 Create personalized learning journeys using AI  
-
+ 
