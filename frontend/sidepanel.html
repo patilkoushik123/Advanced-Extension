@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Assistant</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>📘 Research Assistant</h2>
+      <button id="toggleTheme" class="theme-toggle">🌙</button>
+    </div>
+
+    <div class="actions">
+      <button id="summarizeBtn" class="button"><span>🔍</span> Summarize</button>
+      <button id="mcqBtn" class="button"><span>❓</span> Generate MCQs</button>
+      <button id="downloadMcqsBtn" class="button"><span>⬇</span> Download Result</button>
+    </div>
+
+    <div class="custom-question-box">
+      <input type="text" id="customQuestion" placeholder="Type your custom question here..." />
+      <button id="askQuestionBtn" class="button"><span>💡</span> Ask AI</button>
+    </div>
+
+    <div class="notes">
+      <h3>📝 Research Notes</h3>
+      <textarea id="notes" placeholder="Take notes here..."></textarea>
+      <div class="note-buttons">
+        <button id="saveNotesBtn" class="button secondary">💾 Save Notes</button>
+        <button id="downloadNotesBtn" class="button secondary">⬇ Download Notes</button>
+      </div>
+    </div>
+
+    <div id="results" class="result-box"></div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

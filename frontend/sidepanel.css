@@ -1,0 +1,143 @@
+:root {
+  --bg: #f4f6f9;
+  --fg: #333;
+  --card: #ffffff;
+  --button-bg: #1a73e8;
+  --button-hover: #0f59c8;
+  --border: #ccc;
+}
+
+body.dark {
+  --bg: #121212;
+  --fg: #f1f1f1;
+  --card: #1e1e1e;
+  --button-bg: #3a81f3;
+  --button-hover: #2563eb;
+  --border: #555;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 420px;
+  margin: auto;
+}
+
+.header {
+  position: relative;
+  padding: 14px;
+  background-color: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.actions,
+.note-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 16px;
+  background-color: var(--button-bg);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.03);
+}
+
+.button.secondary {
+  background-color: #64748b;
+}
+
+.button.secondary:hover {
+  background-color: #475569;
+}
+
+.notes {
+  background-color: var(--card);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.notes h3 {
+  margin-top: 0;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+textarea {
+  width: 100%;
+  height: 180px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  resize: vertical;
+  font-size: 14px;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+#results {
+  background-color: var(--card);
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 220px;
+  overflow-y: auto;
+  white-space: pre-line;
+}
+.custom-question-box {
+  display: flex;
+  gap: 10px;
+  margin-top: -10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.custom-question-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  background-color: var(--bg);
+  color: var(--fg);
+  min-width: 60%;
+}
