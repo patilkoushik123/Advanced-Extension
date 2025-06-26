@@ -1,3 +1,4 @@
+![extension-spring-boot](https://github.com/user-attachments/assets/fc99f47b-562b-442f-bbec-9f648b526251)
 # 🧠 AI Research Assistant Chrome Extension with Spring Boot Backend
 
 ---
